@@ -1,0 +1,29 @@
+import { useState } from 'react'
+import './EntryView.css'
+
+export default function EntryView({ onEnter }) {
+  const [exit, setExit] = useState(false)
+
+  const handleClick = () => {
+    setExit(true)
+    setTimeout(() => {
+      onEnter()
+    }, 1200) // match animation duration
+  }
+
+  return (
+    <div className={`entry-container ${exit ? 'vhs-exit' : ''}`}>
+      <video
+        src="src/assets/video/ocean.mp4"
+        className="entry-video"
+        autoPlay
+        muted
+        playsInline
+      />
+      <button className="enter-btn" onClick={handleClick}>
+        Enter
+      </button>
+      <div className="vhs-noise-overlay" />
+    </div>
+  )
+}

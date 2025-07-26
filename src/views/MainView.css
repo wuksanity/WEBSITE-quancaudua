@@ -1,0 +1,84 @@
+:root {
+  --traffic-bar-height: 80px;
+}
+
+.main-view {
+  width: 100vw; /* exactly viewport width to cover edges */
+  overflow-x: hidden;
+}
+
+/* Slide styling */
+.slide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide .overlay {
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  padding: 2rem 3rem;
+  max-width: 600px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Typography */
+.slide h2 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+.slide p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Dot controls */
+.dot-container {
+  position: absolute;
+  bottom: calc(var(--traffic-bar-height) + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.8rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  padding: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+  background: #ffffff;
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+.dot:focus-visible {
+  outline: 2px solid #fff;
+}
+
+.dot:focus {
+  outline: none;
+} 

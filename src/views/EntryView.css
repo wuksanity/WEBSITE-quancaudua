@@ -1,0 +1,82 @@
+.entry-container {
+  position: fixed; /* Lock to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.entry-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover entire container */
+  z-index: -1; /* Place behind button */
+}
+
+.enter-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.enter-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+} 
+
+@keyframes vhsRollOut {
+    0% {
+      transform: scaleY(1) translateY(0);
+      filter: contrast(1) brightness(1);
+      opacity: 1;
+    }
+    30% {
+      transform: scaleY(1.05) translateY(-2%);
+      filter: contrast(1.2) brightness(1.1);
+    }
+    60% {
+      transform: scaleY(0.3) translateY(100%);
+      filter: contrast(0.8) brightness(0.6);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scaleY(0) translateY(200%);
+      opacity: 0;
+    }
+  }
+  
+  .vhs-exit .entry-video {
+    animation: vhsRollOut 1.2s ease-in forwards;
+  }
+  
+  .vhs-noise-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: url('src/assets/video/static-glitch.gif') repeat;
+    mix-blend-mode: screen;
+    opacity: 0.07;
+    z-index: 10;
+    animation: noiseFlicker 1.5s infinite steps(2);
+  }
+  
+  @keyframes noiseFlicker {
+    0%, 100% { opacity: 0.07; }
+    50% { opacity: 0.1; }
+  }
