@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import MenuSection from '../components/MenuSection';
 import './MainView.css';
 
-import lotusImg from '../assets/photo/lotus.jpg';
-import bridgeImg from '../assets/photo/bridge.jpg';
 
 const sections = [
   {
     id: 1,
-    image: lotusImg,
+    image: '/src/assets/compressed_rest2.JPG',
     title: 'Welcome to Our Restaurant',
     text: 'Experience authentic flavors amidst a lively Saigon street.'
   },
   {
     id: 2,
-    image: bridgeImg,
+    image: '/src/assets/compressed_rest1.JPG',
     title: 'Our Menu',
     text: 'From classic pho to modern twists, explore what we are serving.'
   },
@@ -48,6 +47,7 @@ const MainView = () => {
           ))}
         </div>
       </div>
+      {current === 1 && <MenuSection />}
       <Footer />
     </div>
   );

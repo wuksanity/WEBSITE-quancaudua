@@ -1,5 +1,5 @@
 import React from 'react';
-import trafficVideo from '../assets/video/traffic.mp4';
+//import trafficVideo from '../assets/video/traffic.mp4';
 import './TrafficBars.css';
 
 const FOOTER_HEIGHT = 80; // px
@@ -12,7 +12,7 @@ const Footer = () => {
     >
       <video
         className="traffic-video"
-        src={trafficVideo}
+        //src={trafficVideo}
         autoPlay
         loop
         muted
