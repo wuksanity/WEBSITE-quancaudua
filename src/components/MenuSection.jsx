@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import '../components/MenuSection.css';
 
 const dishes = [
@@ -15,34 +15,34 @@ const showcases = [
   {
     id: 1,
     name: 'Hủ Tiếu Mì',
-    image: '/src/assets/compressed_bowl1.JPG',
+    image: '/src/assets/compressed_bowl1.jpg',
     reverse: false
   },
   {
     id: 2,
     name: 'Hoành Thánh',
-    image: '/src/assets/compressed_bowl1.JPG',
+    image: '/src/assets/compressed_bowl1.jpg',
     reverse: true
   },
   {
     id: 3,
     name: 'Bánh Canh',
-    image: '/src/assets/compressed_bowl1.JPG',
+    image: '/src/assets/compressed_bowl1.jpg',
     reverse: false
   }
 ];
 
 const toppings = [
-  { id: 1, name: 'Gan', image: '/src/assets/compressed_liver1.JPG' },
-  { id: 2, name: 'Thịt Viên', image: '/src/assets/compressed_meatball1.JPG' },
-  { id: 3, name: 'Thịt Heo', image: '/src/assets/compressed_pork1.JPG' },
-  { id: 4, name: 'Tôm', image: '/src/assets/compressed_shrimp1.JPG' },
-  { id: 5, name: 'Hoành Thánh', image: '/src/assets/compressed_wonton1.JPG' },
-  { id: 6, name: 'Tiết', image: '/src/assets/compressed_blood1.JPG' },
-  { id: 7, name: 'Cà Rốt', image: '/src/assets/compressed_carrot1.JPG' },
-  { id: 8, name: 'Chả', image: '/src/assets/compressed_cha1.JPG' },
-  { id: 9, name: 'Trứng', image: '/src/assets/compressed_egg1.JPG' },
-  { id: 10, name: 'Gà', image: '/src/assets/compressed_chic1.JPG' }
+  { id: 1, name: 'Gan', image: '/src/assets/compressed_liver1.jpg' },
+  { id: 2, name: 'Thịt Viên', image: '/src/assets/compressed_meatball1.jpg' },
+  { id: 3, name: 'Thịt Heo', image: '/src/assets/compressed_pork1.jpg' },
+  { id: 4, name: 'Tôm', image: '/src/assets/compressed_shrimp1.jpg' },
+  { id: 5, name: 'Hoành Thánh', image: '/src/assets/compressed_wonton1.jpg' },
+  { id: 6, name: 'Tiết', image: '/src/assets/compressed_blood1.jpg' },
+  { id: 7, name: 'Cà Rốt', image: '/src/assets/compressed_carrot1.jpg' },
+  { id: 8, name: 'Chả', image: '/src/assets/compressed_cha1.jpg' },
+  { id: 9, name: 'Trứng', image: '/src/assets/compressed_egg1.jpg' },
+  { id: 10, name: 'Gà', image: '/src/assets/compressed_chic1.jpg' }
 ];
 
 const MenuSection = () => {
@@ -58,9 +58,17 @@ const MenuSection = () => {
 
   return (
     <section className="menu-section" id="menu">
+      {/* Hero Section */}
+      <div className="menu-hero">
+        <div className="menu-hero-overlay">
+          <h1 className="menu-hero-title">Our Menu</h1>
+          <p className="menu-hero-subtitle">Discover our authentic Vietnamese dishes</p>
+        </div>
+      </div>
+
       {/* Dish list */}
       <div className="dish-list-container">
-        <h2 className="section-title">Our Menu</h2>
+        <h2 className="section-title">Signature Dishes</h2>
         <ul className="dish-list">
           {dishes.map((dish) => (
             <li key={dish}>{dish}</li>
@@ -110,7 +118,7 @@ const MenuSection = () => {
       {selectedImage && (
         <div className="image-modal-overlay" onClick={closeModal}>
           <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close-btn" onClick={closeModal}>×</button>
+            <button className="modal-close-btn" onClick={closeModal}></button>
             <img 
               src={selectedImage.src} 
               alt={selectedImage.alt} 
@@ -124,4 +132,4 @@ const MenuSection = () => {
   );
 };
 
-export default MenuSection; 
+export default MenuSection;

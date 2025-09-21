@@ -14,7 +14,7 @@ export default function EntryView({ onEnter }) {
   return (
     <div className={`entry-container ${exit ? 'vhs-exit' : ''}`}>
       <video
-        src="src/assets/video/ocean.mp4"
+        src="src/assets/food.mp4"
         className="entry-video"
         autoPlay
         muted
