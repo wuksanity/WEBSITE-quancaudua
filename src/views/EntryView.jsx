@@ -19,9 +19,10 @@ export default function EntryView({ onEnter }) {
         autoPlay
         muted
         playsInline
+        loop
       />
       <button className="enter-btn" onClick={handleClick}>
-        Enter
+        Vào
       </button>
       <div className="vhs-noise-overlay" />
     </div>

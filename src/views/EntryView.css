@@ -40,30 +40,52 @@
   color: #000;
 } 
 
-@keyframes vhsRollOut {
-    0% {
-      transform: scaleY(1) translateY(0);
-      filter: contrast(1) brightness(1);
-      opacity: 1;
-    }
-    30% {
-      transform: scaleY(1.05) translateY(-2%);
-      filter: contrast(1.2) brightness(1.1);
-    }
-    60% {
-      transform: scaleY(0.3) translateY(100%);
-      filter: contrast(0.8) brightness(0.6);
-      opacity: 0.7;
-    }
-    100% {
-      transform: scaleY(0) translateY(200%);
-      opacity: 0;
-    }
+@keyframes smoothFadeOut {
+  0% {
+    transform: scale(1) translateY(0);
+    filter: contrast(1) brightness(1) saturate(1);
+    opacity: 1;
   }
-  
-  .vhs-exit .entry-video {
-    animation: vhsRollOut 1.2s ease-in forwards;
+  100% {
+    transform: scale(0.8) translateY(20%);
+    filter: contrast(0.7) brightness(0.6) saturate(0.8);
+    opacity: 0;
   }
+}
+
+.vhs-exit .entry-video {
+  animation: smoothFadeOut 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.vhs-exit .vhs-noise-overlay {
+  animation: noiseIntensify 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes noiseIntensify {
+  0% {
+    opacity: 0.07;
+    mix-blend-mode: screen;
+  }
+  100% {
+    opacity: 0.2;
+    mix-blend-mode: multiply;
+  }
+}
+
+.vhs-exit .enter-btn {
+  animation: buttonFadeOut 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes buttonFadeOut {
+  0% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
   
   .vhs-noise-overlay {
     pointer-events: none;

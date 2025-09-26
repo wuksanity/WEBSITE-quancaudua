@@ -58,17 +58,25 @@ const MenuSection = () => {
 
   return (
     <section className="menu-section" id="menu">
+      {/* Background Image for main section */}
+      <div className="section-background">
+        <img src="src/assets/compressed_rest2.jpg" alt="Restaurant background" className="background-image" />
+      </div>
+
       {/* Hero Section */}
       <div className="menu-hero">
         <div className="menu-hero-overlay">
-          <h1 className="menu-hero-title">Our Menu</h1>
-          <p className="menu-hero-subtitle">Discover our authentic Vietnamese dishes</p>
+          <h1 className="menu-hero-title">Thực đơn của chúng tôi</h1>
+          <p className="menu-hero-subtitle">Khám phá các món ăn Việt Nam chân thực</p>
         </div>
       </div>
 
       {/* Dish list */}
       <div className="dish-list-container">
-        <h2 className="section-title">Signature Dishes</h2>
+        <div className="section-background">
+          <img src="src/assets/compressed_rest3.jpg" alt="Dish section background" className="background-image" />
+        </div>
+        <h2 className="section-title">Món ăn đặc trưng</h2>
         <ul className="dish-list">
           {dishes.map((dish) => (
             <li key={dish}>{dish}</li>
@@ -78,6 +86,9 @@ const MenuSection = () => {
 
       {/* Showcases */}
       <div className="showcases">
+        <div className="section-background">
+          <img src="src/assets/compressed_rest4.jpg" alt="Showcase section background" className="background-image" />
+        </div>
         {showcases.map(({ id, name, image, reverse }) => (
           <div
             key={id}
@@ -97,7 +108,10 @@ const MenuSection = () => {
 
       {/* Toppings */}
       <div className="toppings-container">
-        <h2 className="section-title">Available Toppings</h2>
+        <div className="section-background">
+          <img src="src/assets/compressed_rest5.jpg" alt="Toppings section background" className="background-image" />
+        </div>
+        <h2 className="section-title">Toppings có sẵn</h2>
         <div className="toppings-grid">
           {toppings.map(({ id, name, image }) => (
             <div key={id} className="topping-item">

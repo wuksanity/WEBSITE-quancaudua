@@ -9,7 +9,23 @@
 .menu-section {
   padding: 0;
   background: var(--night-primary);
-  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-section::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/src/assets/compressed_rest2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: -1;
 }
 
 /* Menu Hero Section */
@@ -84,8 +100,25 @@
 /* Dish List Styles */
 .dish-list-container {
   max-width: 1000px;
-  margin: 0 auto 6rem;
-  padding: 6rem 2rem 0;
+  margin: 0 auto 0;
+  padding: 4rem 2rem 0;
+  position: relative;
+}
+
+.dish-list-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/src/assets/compressed_rest3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  border-radius: 20px;
 }
 
 .dish-list {
@@ -120,11 +153,28 @@
 /* Showcase Styles */
 .showcases {
   max-width: 1400px;
-  margin: 0 auto 6rem;
-  padding: 0 2rem;
+  margin: 0 auto 0;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  position: relative;
+}
+
+.showcases::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/src/assets/compressed_rest4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  z-index: -1;
+  border-radius: 25px;
 }
 
 .showcase {
@@ -178,8 +228,25 @@
 /* Toppings Styles */
 .toppings-container {
   max-width: 1400px;
-  margin: 0 auto 6rem;
-  padding: 0 2rem;
+  margin: 0 auto 0;
+  padding: 2rem 2rem 3rem;
+  position: relative;
+}
+
+.toppings-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/src/assets/compressed_rest5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  border-radius: 20px;
 }
 
 .toppings-grid {
@@ -236,9 +303,24 @@
     font-size: 2.5rem;
   }
   
-  .menu-hero-sublay {
+  .menu-hero-overlay {
     padding: 2rem 3rem;
     margin-top: 1rem;
+  }
+  
+  .dish-list-container {
+    margin: 0 auto 0;
+    padding: 3rem 1rem 0;
+  }
+  
+  .showcases {
+    margin: 0 auto 0;
+    padding: 1rem;
+  }
+  
+  .toppings-container {
+    margin: 0 auto 0;
+    padding: 1rem 1rem 2rem;
   }
   
   .showcase {
@@ -346,4 +428,44 @@
   color: var(--night-accent);
   text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
   letter-spacing: 0.05em;
+}
+
+.section-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  filter: blur(0.5px);
+}
+
+.dish-list-container,
+.showcases,
+.toppings-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dish-list-container .section-title,
+.showcases .section-title,
+.toppings-container .section-title {
+  position: relative;
+  z-index: 2;
+}
+
+.dish-list,
+.showcase,
+.topping-item {
+  position: relative;
+  z-index: 2;
 }

@@ -14,8 +14,8 @@ const MainView = () => {
           <div className="welcome-section">
             <div className="hero-image">
               <div className="overlay">
-                <h1>Welcome to Our Restaurant</h1>
-                <p>Experience authentic flavors amidst a lively Saigon street.</p>
+                <h1>Chào mừng đến với Quán Cường</h1>
+                <p>Trải nghiệm hương vị chân thực giữa phố phường Sài Gòn sôi động.</p>
               </div>
             </div>
             
@@ -23,27 +23,33 @@ const MainView = () => {
               <div className="content-grid">
                 <div className="image-gallery">
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_rest2.jpg" alt="Restaurant Interior" />
+                    <img src="/src/assets/compressed_rest2.jpg" alt="Nội thất quán" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_rest3.jpg" alt="Dining Area" />
+                    <img src="/src/assets/compressed_rest3.jpg" alt="Khu vực ăn uống" />
+                  </div>
+                  <div className="gallery-item">
+                    <img src="/src/assets/compressed_rest4.jpg" alt="Không gian quán" />
+                  </div>
+                  <div className="gallery-item">
+                    <img src="/src/assets/compressed_bowl1.jpg" alt="Bầu không khí quán" />
                   </div>
                 </div>
                 
                 <div className="info-section">
                   <div className="info-card">
-                    <h3>Location & Hours</h3>
+                    <h3>Địa chỉ & Giờ mở cửa</h3>
                     <div className="info-details">
                       <div className="info-item">
-                        <h4>Address</h4>
-                        <p>123 Saigon Street<br />District 1, Ho Chi Minh City</p>
+                        <h4>Địa chỉ</h4>
+                        <p>123 Đường Sài Gòn<br />Quận 1, Thành phố Hồ Chí Minh</p>
                       </div>
                       <div className="info-item">
-                        <h4>Hours</h4>
-                        <p>Monday - Sunday<br />11:00 AM - 10:00 PM</p>
+                        <h4>Giờ mở cửa</h4>
+                        <p>Thứ 2 - Chủ nhật<br />11:00 - 22:00</p>
                       </div>
                       <div className="info-item">
-                        <h4>Phone</h4>
+                        <h4>Điện thoại</h4>
                         <p>(+84) 123 456 789</p>
                       </div>
                     </div>
@@ -59,29 +65,14 @@ const MainView = () => {
         return (
           <div className="about-section">
             <div className="about-hero">
-              <img src="/src/assets/compressed_rest5.jpg" alt="About Us" />
+              <img src="/src/assets/compressed_rest6.jpg" alt="Về chúng tôi" />
               <div className="overlay">
-                <h2>About Us</h2>
-                <p>Discover our story and passion for authentic Vietnamese cuisine</p>
+                <h2>Về chúng tôi</h2>
+                <p>Khám phá câu chuyện và niềm đam mê của chúng tôi với ẩm thực Việt Nam chân thực</p>
               </div>
             </div>
             <div className="about-content">
-              <p>We are passionate about bringing you the authentic flavors of Vietnam. Our restaurant has been serving the community for over two decades, combining traditional recipes with modern culinary techniques to create an unforgettable dining experience.</p>
-            </div>
-          </div>
-        );
-      case 'contact':
-        return (
-          <div className="contact-section">
-            <div className="contact-hero">
-              <img src="/src/assets/compressed_rest6.jpg" alt="Contact Us" />
-              <div className="overlay">
-                <h2>Contact Us</h2>
-                <p>Get in touch with us for reservations and inquiries</p>
-              </div>
-            </div>
-            <div className="contact-content">
-              <p>Ready to experience the best Vietnamese cuisine in Saigon? Contact us today to make a reservation or ask any questions about our menu and services.</p>
+              <p>Chúng tôi đam mê mang đến cho bạn những hương vị chân thực của Việt Nam. Quán Cường đã phục vụ cộng đồng hơn hai thập kỷ, kết hợp các công thức truyền thống với kỹ thuật ẩm thực hiện đại để tạo ra trải nghiệm ẩm thực khó quên.</p>
             </div>
           </div>
         );
@@ -97,7 +88,7 @@ const MainView = () => {
       <nav className="main-navbar">
         <div className="nav-container">
           <div className="nav-logo">
-            <h2>Saigon Nights</h2>
+            <h2>Quán Cường</h2>
           </div>
           <ul className="nav-menu">
             <li>
@@ -105,7 +96,7 @@ const MainView = () => {
                 className={`nav-link ${activeSection === 'welcome' ? 'active' : ''}`}
                 onClick={() => setActiveSection('welcome')}
               >
-                Home
+                Trang chủ
               </button>
             </li>
             <li>
@@ -113,7 +104,7 @@ const MainView = () => {
                 className={`nav-link ${activeSection === 'menu' ? 'active' : ''}`}
                 onClick={() => setActiveSection('menu')}
               >
-                Menu
+                Thực đơn
               </button>
             </li>
             <li>
@@ -121,15 +112,7 @@ const MainView = () => {
                 className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}
                 onClick={() => setActiveSection('about')}
               >
-                About
-              </button>
-            </li>
-            <li>
-              <button 
-                className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
-                onClick={() => setActiveSection('contact')}
-              >
-                Contact
+                Về chúng tôi
               </button>
             </li>
           </ul>
