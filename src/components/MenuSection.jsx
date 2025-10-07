@@ -2,9 +2,9 @@
 import '../components/MenuSection.css';
 
 const dishes = [
-  'Hủ Tiếu Mì',
+  'Hủ Tiếu Mì Khô',
   'Hoành Thánh',
-  'Bánh Canh',
+  'Mì Tươi Thập Cẩm',
   'Nui',
   'Hủ Tiếu Mềm',
   'Mì Gói'
@@ -14,20 +14,20 @@ const dishes = [
 const showcases = [
   {
     id: 1,
-    name: 'Hủ Tiếu Mì',
+    name: 'Hủ Tiếu Mì Khô',
     image: '/src/assets/compressed_bowl1.jpg',
     reverse: false
   },
   {
     id: 2,
     name: 'Hoành Thánh',
-    image: '/src/assets/compressed_bowl1.jpg',
+    image: '/src/assets/compressed_wonton2.jpg',
     reverse: true
   },
   {
     id: 3,
-    name: 'Bánh Canh',
-    image: '/src/assets/compressed_bowl1.jpg',
+    name: 'Mì Tươi Thập Cẩm',
+    image: '/src/assets/compressed_mi4.jpg',
     reverse: false
   }
 ];

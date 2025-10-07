@@ -73,6 +73,34 @@ const MainView = () => {
             </div>
             <div className="about-content">
               <p>Chúng tôi đam mê mang đến cho bạn những hương vị chân thực của Việt Nam. Quán Cường đã phục vụ cộng đồng hơn hai thập kỷ, kết hợp các công thức truyền thống với kỹ thuật ẩm thực hiện đại để tạo ra trải nghiệm ẩm thực khó quên.</p>
+              
+              {/* Photo Gallery Section */}
+              <div className="about-gallery">
+                <h3>Hình ảnh về chúng tôi</h3>
+                <div className="about-gallery-grid">
+                  <div className="about-gallery-item">
+                    <img src="/src/assets/compressed_owners1.jpg" alt="Chủ quán" />
+                    <div className="gallery-caption">
+                      <h4>Gia đình chủ quán</h4>
+                      <p>Những người đã gìn giữ và phát triển hương vị truyền thống</p>
+                    </div>
+                  </div>
+                  <div className="about-gallery-item">
+                    <img src="/src/assets/compressed_cook2.jpg" alt="Quá trình nấu ăn" />
+                    <div className="gallery-caption">
+                      <h4>Nghệ thuật nấu ăn</h4>
+                      <p>Kỹ thuật nấu ăn truyền thống được truyền qua nhiều thế hệ</p>
+                    </div>
+                  </div>
+                  <div className="about-gallery-item">
+                    <img src="/src/assets/compressed_rest1.jpg" alt="Không gian quán" />
+                    <div className="gallery-caption">
+                      <h4>Không gian ấm cúng</h4>
+                      <p>Nơi hội tụ của hương vị và tình cảm gia đình</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         );

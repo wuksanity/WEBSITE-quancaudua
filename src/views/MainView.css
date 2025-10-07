@@ -2,10 +2,28 @@
   --traffic-bar-height: 80px;
   --navbar-height: 70px;
   --night-primary: #0a0a0a;
-  --night-secondary: #1a1a1a;
+  --night-secondary: #131313; /* slightly lighter for better elevation contrast */
+  --night-tertiary: #1f1f1f;
   --night-accent: #d4af37;
   --night-text: #e8e8e8;
   --night-text-muted: #a0a0a0;
+
+  /* Design tokens */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+
+  --border-weak: 1px solid rgba(212, 175, 55, 0.15);
+  --border-strong: 1px solid rgba(212, 175, 55, 0.28);
+
+  --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.65);
+  --shadow-xl: 0 28px 64px rgba(0, 0, 0, 0.75);
+
+  --surface-glass: linear-gradient(135deg, rgba(19, 19, 19, 0.9), rgba(31, 31, 31, 0.8));
+  --surface-glass-strong: linear-gradient(135deg, rgba(19, 19, 19, 0.95), rgba(31, 31, 31, 0.9));
 }
 
 * {
@@ -32,12 +50,12 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.98), rgba(26, 26, 26, 0.98));
-  backdrop-filter: blur(15px);
+  background: var(--surface-glass-strong);
+  backdrop-filter: blur(16px);
   height: var(--navbar-height);
   z-index: 1001;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  border-bottom: var(--border-strong);
+  box-shadow: var(--shadow-md);
 }
 
 .nav-container {
@@ -75,7 +93,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   padding: 0.8rem 1.5rem;
-  border-radius: 25px;
+  border-radius: 999px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -98,14 +116,14 @@ body {
 
 .nav-link:hover {
   color: var(--night-text);
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(212, 175, 55, 0.12);
   transform: translateY(-2px);
 }
 
 .nav-link.active {
   color: var(--night-accent);
-  background: rgba(212, 175, 55, 0.15);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  background: rgba(212, 175, 55, 0.18);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25), var(--shadow-sm);
   transform: translateY(-2px);
 }
 
@@ -148,15 +166,15 @@ body {
 .hero-image .overlay {
   position: relative;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.28);
   color: var(--night-text);
   padding: 4rem 5rem;
   max-width: 800px;
   text-align: center;
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  border-radius: 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
   margin-top: 2rem; /* Add some space below navbar */
 }
 
@@ -203,14 +221,14 @@ body {
 .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  box-shadow: var(--shadow-lg);
 }
 
 .gallery-item img {
@@ -229,11 +247,11 @@ body {
 }
 
 .info-card {
-  background: linear-gradient(135deg, var(--night-secondary), rgba(26, 26, 26, 0.8));
-  padding: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  background: var(--surface-glass);
+  padding: 2.5rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  border: var(--border-weak);
   backdrop-filter: blur(10px);
 }
 
@@ -304,7 +322,7 @@ body {
 .about-hero .overlay, .contact-hero .overlay {
   position: relative;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.12);
   color: var(--night-text);
   display: flex;
   flex-direction: column;
@@ -316,10 +334,10 @@ body {
   width: calc(100% - 4rem);
   margin: 0 2rem;
   box-sizing: border-box;
-  backdrop-filter: blur(3px);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  border-radius: 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  border: var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
 }
 
 .about-hero h2, .contact-hero h2 {
@@ -357,8 +375,105 @@ body {
   color: var(--night-text-muted);
 }
 
+/* About Gallery Styles */
+.about-gallery {
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
+
+.about-gallery h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--night-accent);
+  margin-bottom: 3rem;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  border-bottom: 3px solid var(--night-accent);
+  padding-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.about-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.about-gallery-item {
+  position: relative;
+  background: var(--surface-glass);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: var(--border-weak);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.about-gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.about-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-caption {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery-caption h4 {
+  font-size: 1.4rem;
+  color: var(--night-accent);
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.gallery-caption p {
+  font-size: 1rem;
+  color: var(--night-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  .about-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-gallery h3 {
+    font-size: 2rem;
+  }
+  
+  .about-gallery-item img {
+    height: 200px;
+  }
+  
+  .gallery-caption {
+    padding: 1.5rem;
+  }
+  
+  .gallery-caption h4 {
+    font-size: 1.2rem;
+  }
+  
+  .gallery-caption p {
+    font-size: 0.9rem;
+  }
+  
   .nav-container {
     padding: 0 1rem;
   }
