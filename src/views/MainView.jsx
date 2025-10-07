@@ -26,7 +26,7 @@ const MainView = () => {
                     <img src="/src/assets/compressed_rest2.jpg" alt="Nội thất quán" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_rest3.jpg" alt="Khu vực ăn uống" />
+                    <img src="/src/assets/compressed_cook1.jpg" alt="Khu vực ăn uống" />
                   </div>
                   <div className="gallery-item">
                     <img src="/src/assets/compressed_rest4.jpg" alt="Không gian quán" />
