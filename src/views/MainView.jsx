@@ -68,11 +68,11 @@ const MainView = () => {
               <img src="/src/assets/compressed_rest6.jpg" alt="Về chúng tôi" />
               <div className="overlay">
                 <h2>Về chúng tôi</h2>
-                <p>Khám phá câu chuyện và niềm đam mê của chúng tôi với ẩm thực Việt Nam chân thực</p>
+                <p>Quán nhỏ thân thiện, phục vụ hàng xóm với tấm lòng</p>
               </div>
             </div>
             <div className="about-content">
-              <p>Chúng tôi đam mê mang đến cho bạn những hương vị chân thực của Việt Nam. Quán Cường đã phục vụ cộng đồng hơn hai thập kỷ, kết hợp các công thức truyền thống với kỹ thuật ẩm thực hiện đại để tạo ra trải nghiệm ẩm thực khó quên.</p>
+              <p>Quán Cường đã đồng hành cùng khu phố hơn hai thập kỷ. Chúng tôi nấu ăn với tâm huyết, mong muốn mỗi bữa ăn đều mang lại sự hài lòng cho thực khách.</p>
               
               {/* Photo Gallery Section */}
               <div className="about-gallery">
@@ -82,14 +82,14 @@ const MainView = () => {
                     <img src="/src/assets/compressed_owners1.jpg" alt="Chủ quán" />
                     <div className="gallery-caption">
                       <h4>Gia đình chủ quán</h4>
-                      <p>Những người đã gìn giữ và phát triển hương vị truyền thống</p>
+                      <p>Những người đã gìn giữ và phát triển hương vị ngon</p>
                     </div>
                   </div>
                   <div className="about-gallery-item">
                     <img src="/src/assets/compressed_cook2.jpg" alt="Quá trình nấu ăn" />
                     <div className="gallery-caption">
-                      <h4>Nghệ thuật nấu ăn</h4>
-                      <p>Kỹ thuật nấu ăn truyền thống được truyền qua nhiều thế hệ</p>
+                      <h4>Triết lý nấu ăn</h4>
+                      <p>Tập trung mang đến hương vị ngon trong từng miếng, từng tô</p>
                     </div>
                   </div>
                   <div className="about-gallery-item">
