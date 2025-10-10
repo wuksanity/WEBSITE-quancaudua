@@ -67,27 +67,22 @@ const MenuSection = () => {
       <div className="menu-hero">
         <div className="menu-hero-overlay">
           <h1 className="menu-hero-title">Thực đơn của chúng tôi</h1>
-          <p className="menu-hero-subtitle">Khám phá các món ăn Việt Nam chân thực</p>
+          <p className="menu-hero-subtitle">Món quen, vị nhà, giá phải chăng</p>
         </div>
       </div>
 
       {/* Dish list */}
       <div className="dish-list-container">
         <div className="section-background">
-          <img src="src/assets/compressed_rest3.jpg" alt="Dish section background" className="background-image" />
+          <img src="src/assets/compressed_cook1.jpg" alt="Dish section background" className="background-image" />
         </div>
         <h2 className="section-title">Món ăn đặc trưng</h2>
-        <ul className="dish-list">
-          {dishes.map((dish) => (
-            <li key={dish}>{dish}</li>
-          ))}
-        </ul>
       </div>
 
       {/* Showcases */}
       <div className="showcases">
         <div className="section-background">
-          <img src="src/assets/compressed_rest4.jpg" alt="Showcase section background" className="background-image" />
+          <img src="src/assets/compressed_cook4.jpg" alt="Showcase section background" className="background-image" />
         </div>
         {showcases.map(({ id, name, image, reverse }) => (
           <div
@@ -109,7 +104,7 @@ const MenuSection = () => {
       {/* Toppings */}
       <div className="toppings-container">
         <div className="section-background">
-          <img src="src/assets/compressed_rest5.jpg" alt="Toppings section background" className="background-image" />
+          <img src="src/assets/compressed_meal.jpg" alt="Toppings section background" className="background-image" />
         </div>
         <h2 className="section-title">Toppings có sẵn</h2>
         <div className="toppings-grid">

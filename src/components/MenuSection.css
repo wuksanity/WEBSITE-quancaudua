@@ -78,10 +78,6 @@
   text-align: center;
   color: var(--night-text);
   padding: 4rem 5rem;
-  backdrop-filter: blur(6px);
-  border: var(--border-strong);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
   margin-top: 2rem;
 }
 
@@ -101,7 +97,7 @@
   font-size: 1.4rem;
   line-height: 1.8;
   margin: 0;
-  color: var(--night-text-muted);
+  color: var(--night-text);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -198,12 +194,12 @@
 .showcase {
   background: var(--surface-glass);
   border-radius: var(--radius-xl);
-  padding: 2.5rem;
+  padding: 1.5rem 2.5rem;
   box-shadow: var(--shadow-lg);
   display: flex;
   align-items: center;
   gap: 3rem;
-  min-height: 350px;
+  min-height: 200px;
   border: var(--border-weak);
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -219,8 +215,8 @@
 }
 
 .showcase-image {
-  width: 350px;
-  height: 280px;
+  width: 280px;
+  height: 200px;
   object-fit: cover;
   border-radius: var(--radius-lg);
   flex-shrink: 0;

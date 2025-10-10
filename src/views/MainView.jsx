@@ -15,7 +15,7 @@ const MainView = () => {
             <div className="hero-image">
               <div className="overlay">
                 <h1>Chào mừng đến với Quán Cường</h1>
-                <p>Trải nghiệm hương vị chân thực giữa phố phường Sài Gòn sôi động.</p>
+                <p>Tươi ngon, thân thiện, ấm cúng.</p>
               </div>
             </div>
             
@@ -23,16 +23,16 @@ const MainView = () => {
               <div className="content-grid">
                 <div className="image-gallery">
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_rest2.jpg" alt="Nội thất quán" />
+                    <img src="/src/assets/compressed_cook6.jpg" alt="Nội thất quán" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_cook1.jpg" alt="Khu vực ăn uống" />
+                    <img src="/src/assets/compressed_mi2.jpg" alt="Khu vực ăn uống" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_rest4.jpg" alt="Không gian quán" />
+                    <img src="/src/assets/compressed_iwonton4.jpg" alt="Không gian quán" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_bowl1.jpg" alt="Bầu không khí quán" />
+                    <img src="/src/assets/compressed_rest2.jpg" alt="Bầu không khí quán" />
                   </div>
                 </div>
                 
@@ -42,7 +42,7 @@ const MainView = () => {
                     <div className="info-details">
                       <div className="info-item">
                         <h4>Địa chỉ</h4>
-                        <p>123 Đường Sài Gòn<br />Quận 1, Thành phố Hồ Chí Minh</p>
+                        <p>266/9E Bến Vân Đồn, Phường 2<br />Quận 4, Hồ Chí Minh</p>
                       </div>
                       <div className="info-item">
                         <h4>Giờ mở cửa</h4>
@@ -97,6 +97,13 @@ const MainView = () => {
                     <div className="gallery-caption">
                       <h4>Không gian ấm cúng</h4>
                       <p>Nơi hội tụ của hương vị và tình cảm gia đình</p>
+                    </div>
+                  </div>
+                  <div className="about-gallery-item">
+                    <img src="/src/assets/compressed_rest4.jpg" alt="Món ăn tươi ngon" />
+                    <div className="gallery-caption">
+                      <h4>Món ăn thơm ngon</h4>
+                      <p>Từng món được chế biến với tâm huyết và nguyên liệu tươi ngon</p>
                     </div>
                   </div>
                 </div>
