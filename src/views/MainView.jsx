@@ -46,11 +46,11 @@ const MainView = () => {
                       </div>
                       <div className="info-item">
                         <h4>Giờ mở cửa</h4>
-                        <p>Thứ 2 - Chủ nhật<br />11:00 - 22:00</p>
+                        <p>Thứ 2 - Chủ nhật<br />18:00 - 02:00</p>
                       </div>
                       <div className="info-item">
                         <h4>Điện thoại</h4>
-                        <p>(+84) 123 456 789</p>
+                        <p>(+84) 036 745 4153</p>
                       </div>
                     </div>
                   </div>
