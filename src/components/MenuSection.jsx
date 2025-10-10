@@ -73,17 +73,11 @@ const MenuSection = () => {
 
       {/* Dish list */}
       <div className="dish-list-container">
-        <div className="section-background">
-          <img src="src/assets/compressed_cook1.jpg" alt="Dish section background" className="background-image" />
-        </div>
         <h2 className="section-title">Món ăn đặc trưng</h2>
       </div>
 
       {/* Showcases */}
       <div className="showcases">
-        <div className="section-background">
-          <img src="src/assets/compressed_cook4.jpg" alt="Showcase section background" className="background-image" />
-        </div>
         {showcases.map(({ id, name, image, reverse }) => (
           <div
             key={id}
@@ -103,9 +97,6 @@ const MenuSection = () => {
 
       {/* Toppings */}
       <div className="toppings-container">
-        <div className="section-background">
-          <img src="src/assets/compressed_meal.jpg" alt="Toppings section background" className="background-image" />
-        </div>
         <h2 className="section-title">Toppings có sẵn</h2>
         <div className="toppings-grid">
           {toppings.map(({ id, name, image }) => (

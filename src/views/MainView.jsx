@@ -100,7 +100,7 @@ const MainView = () => {
                     </div>
                   </div>
                   <div className="about-gallery-item">
-                    <img src="/src/assets/compressed_rest4.jpg" alt="Món ăn tươi ngon" />
+                    <img src="/src/assets/compressed_meal.jpg" alt="Món ăn tươi ngon" />
                     <div className="gallery-caption">
                       <h4>Món ăn thơm ngon</h4>
                       <p>Từng món được chế biến với tâm huyết và nguyên liệu tươi ngon</p>

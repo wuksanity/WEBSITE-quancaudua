@@ -28,7 +28,6 @@
   padding: 0;
   background: var(--night-primary);
   position: relative;
-  overflow: hidden;
 }
 
 .menu-section::before {
@@ -42,8 +41,23 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.25;
   z-index: -1;
+}
+
+.menu-section::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.3)), url("/src/assets/compressed_meal.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* Menu Hero Section */
@@ -68,7 +82,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
   z-index: 1;
 }
 
@@ -119,22 +133,6 @@
   position: relative;
 }
 
-.dish-list-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("/src/assets/compressed_rest3.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-  z-index: -1;
-  border-radius: var(--radius-xl);
-}
-
 .dish-list {
   list-style: none;
   padding: 0;
@@ -175,22 +173,6 @@
   position: relative;
 }
 
-.showcases::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("/src/assets/compressed_rest4.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.08;
-  z-index: -1;
-  border-radius: var(--radius-xl);
-}
-
 .showcase {
   background: var(--surface-glass);
   border-radius: var(--radius-xl);
@@ -229,14 +211,14 @@
 }
 
 .showcase-name {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--night-accent);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--night-text);
   margin: 0;
   flex-grow: 1;
   text-align: center;
-  text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
-  letter-spacing: 0.05em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.03em;
 }
 
 /* Toppings Styles */
@@ -245,22 +227,6 @@
   margin: 0 auto 0;
   padding: 2rem 2rem 3rem;
   position: relative;
-}
-
-.toppings-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("/src/assets/compressed_rest5.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-  z-index: -1;
-  border-radius: var(--radius-xl);
 }
 
 .toppings-grid {
@@ -466,7 +432,6 @@
 .showcases,
 .toppings-container {
   position: relative;
-  overflow: hidden;
   z-index: 1;
 }
 

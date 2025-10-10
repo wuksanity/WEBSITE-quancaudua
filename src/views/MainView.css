@@ -159,7 +159,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.45));
   z-index: 1;
 }
 
@@ -359,9 +359,12 @@ body {
   font-size: 1.3rem;
   line-height: 1.8;
   margin: 0;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
   color: var(--night-text);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
   max-width: 600px;
+  border-top: 2px solid rgba(212, 175, 55, 0.4);
 }
 
 .about-content, .contact-content {
@@ -394,10 +397,17 @@ body {
   z-index: 1;
 }
 
-.about-content p, .contact-content p {
+.about-content > p, .contact-content > p {
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--night-text-muted);
+  background: var(--surface-glass);
+  padding: 2rem 3rem;
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--night-accent);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 0;
+  backdrop-filter: blur(10px);
 }
 
 /* About Gallery Styles */
