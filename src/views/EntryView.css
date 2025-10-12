@@ -91,7 +91,7 @@
     pointer-events: none;
     position: absolute;
     inset: 0;
-    background: url('src/assets/video/static-glitch.gif') repeat;
+    background: url('../assets/video/static-glitch.gif') repeat;
     mix-blend-mode: screen;
     opacity: 0.07;
     z-index: 10;

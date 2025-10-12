@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './EntryView.css'
+import foodVideo from '../assets/food.mp4'
 
 export default function EntryView({ onEnter }) {
   const [exit, setExit] = useState(false)
@@ -14,7 +15,7 @@ export default function EntryView({ onEnter }) {
   return (
     <div className={`entry-container ${exit ? 'vhs-exit' : ''}`}>
       <video
-        src="src/assets/food.mp4"
+        src={foodVideo}
         className="entry-video"
         autoPlay
         muted
