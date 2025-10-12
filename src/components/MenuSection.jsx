@@ -1,6 +1,22 @@
 ﻿import React, { useState } from 'react';
 import '../components/MenuSection.css';
 
+// Import images
+import bowl1 from '../assets/compressed_bowl1.jpg';
+import wonton2 from '../assets/compressed_wonton2.jpg';
+import mi4 from '../assets/compressed_mi4.jpg';
+import liver1 from '../assets/compressed_liver1.jpg';
+import meatball1 from '../assets/compressed_meatball1.jpg';
+import pork1 from '../assets/compressed_pork1.jpg';
+import shrimp1 from '../assets/compressed_shrimp1.jpg';
+import wonton1 from '../assets/compressed_wonton1.jpg';
+import blood1 from '../assets/compressed_blood1.jpg';
+import carrot1 from '../assets/compressed_carrot1.jpg';
+import cha1 from '../assets/compressed_cha1.jpg';
+import egg1 from '../assets/compressed_egg1.jpg';
+import chic1 from '../assets/compressed_chic1.jpg';
+import rest2 from '../assets/compressed_rest2.jpg';
+
 const dishes = [
   'Hủ Tiếu Mì Khô',
   'Hoành Thánh',
@@ -15,34 +31,34 @@ const showcases = [
   {
     id: 1,
     name: 'Hủ Tiếu Mì Khô',
-    image: '/src/assets/compressed_bowl1.jpg',
+    image: bowl1,
     reverse: false
   },
   {
     id: 2,
     name: 'Hoành Thánh',
-    image: '/src/assets/compressed_wonton2.jpg',
+    image: wonton2,
     reverse: true
   },
   {
     id: 3,
     name: 'Mì Tươi Thập Cẩm',
-    image: '/src/assets/compressed_mi4.jpg',
+    image: mi4,
     reverse: false
   }
 ];
 
 const toppings = [
-  { id: 1, name: 'Gan', image: '/src/assets/compressed_liver1.jpg' },
-  { id: 2, name: 'Thịt Viên', image: '/src/assets/compressed_meatball1.jpg' },
-  { id: 3, name: 'Thịt Heo', image: '/src/assets/compressed_pork1.jpg' },
-  { id: 4, name: 'Tôm', image: '/src/assets/compressed_shrimp1.jpg' },
-  { id: 5, name: 'Hoành Thánh', image: '/src/assets/compressed_wonton1.jpg' },
-  { id: 6, name: 'Tiết', image: '/src/assets/compressed_blood1.jpg' },
-  { id: 7, name: 'Cà Rốt', image: '/src/assets/compressed_carrot1.jpg' },
-  { id: 8, name: 'Chả', image: '/src/assets/compressed_cha1.jpg' },
-  { id: 9, name: 'Trứng', image: '/src/assets/compressed_egg1.jpg' },
-  { id: 10, name: 'Gà', image: '/src/assets/compressed_chic1.jpg' }
+  { id: 1, name: 'Gan', image: liver1 },
+  { id: 2, name: 'Thịt Viên', image: meatball1 },
+  { id: 3, name: 'Thịt Heo', image: pork1 },
+  { id: 4, name: 'Tôm', image: shrimp1 },
+  { id: 5, name: 'Hoành Thánh', image: wonton1 },
+  { id: 6, name: 'Tiết', image: blood1 },
+  { id: 7, name: 'Cà Rốt', image: carrot1 },
+  { id: 8, name: 'Chả', image: cha1 },
+  { id: 9, name: 'Trứng', image: egg1 },
+  { id: 10, name: 'Gà', image: chic1 }
 ];
 
 const MenuSection = () => {
@@ -60,7 +76,7 @@ const MenuSection = () => {
     <section className="menu-section" id="menu">
       {/* Background Image for main section */}
       <div className="section-background">
-        <img src="src/assets/compressed_rest2.jpg" alt="Restaurant background" className="background-image" />
+        <img src={rest2} alt="Restaurant background" className="background-image" />
       </div>
 
       {/* Hero Section */}

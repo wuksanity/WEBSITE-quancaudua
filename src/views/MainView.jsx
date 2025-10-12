@@ -3,6 +3,17 @@ import Header from '../components/Header';
 import MenuSection from '../components/MenuSection';
 import './MainView.css';
 
+// Import images
+import cook6 from '../assets/compressed_cook6.jpg';
+import mi2 from '../assets/compressed_mi2.jpg';
+import iwonton4 from '../assets/compressed_iwonton4.jpg';
+import rest2 from '../assets/compressed_rest2.jpg';
+import rest6 from '../assets/compressed_rest6.jpg';
+import owners1 from '../assets/compressed_owners1.jpg';
+import cook2 from '../assets/compressed_cook2.jpg';
+import rest1 from '../assets/compressed_rest1.jpg';
+import meal from '../assets/compressed_meal.jpg';
+
 const MainView = () => {
   const [activeSection, setActiveSection] = useState('welcome');
 
@@ -22,16 +33,16 @@ const MainView = () => {
               <div className="content-grid">
                 <div className="image-gallery">
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_cook6.jpg" alt="Nội thất quán" />
+                    <img src={cook6} alt="Nội thất quán" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_mi2.jpg" alt="Khu vực ăn uống" />
+                    <img src={mi2} alt="Khu vực ăn uống" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_iwonton4.jpg" alt="Không gian quán" />
+                    <img src={iwonton4} alt="Không gian quán" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/src/assets/compressed_rest2.jpg" alt="Bầu không khí quán" />
+                    <img src={rest2} alt="Bầu không khí quán" />
                   </div>
                 </div>
                 
@@ -67,7 +78,7 @@ const MainView = () => {
         return (
           <div className="about-section">
             <div className="about-hero">
-              <img src="/src/assets/compressed_rest6.jpg" alt="Về chúng tôi" />
+              <img src={rest6} alt="Về chúng tôi" />
               <div className="overlay">
                 <h2>Về chúng tôi</h2>
                 <p>Quán nhỏ thân thiện, phục vụ hàng xóm với tấm lòng</p>
@@ -81,28 +92,28 @@ const MainView = () => {
                 <h3>Hình ảnh về chúng tôi</h3>
                 <div className="about-gallery-grid">
                   <div className="about-gallery-item">
-                    <img src="/src/assets/compressed_owners1.jpg" alt="Chủ quán" />
+                    <img src={owners1} alt="Chủ quán" />
                     <div className="gallery-caption">
                       <h4>Gia đình chủ quán</h4>
                       <p>Những người đã gìn giữ và phát triển hương vị ngon</p>
                     </div>
                   </div>
                   <div className="about-gallery-item">
-                    <img src="/src/assets/compressed_cook2.jpg" alt="Quá trình nấu ăn" />
+                    <img src={cook2} alt="Quá trình nấu ăn" />
                     <div className="gallery-caption">
                       <h4>Triết lý nấu ăn</h4>
                       <p>Tập trung mang đến hương vị ngon trong từng miếng, từng tô</p>
                     </div>
                   </div>
                   <div className="about-gallery-item">
-                    <img src="/src/assets/compressed_rest1.jpg" alt="Không gian quán" />
+                    <img src={rest1} alt="Không gian quán" />
                     <div className="gallery-caption">
                       <h4>Không gian ấm cúng</h4>
                       <p>Nơi hội tụ của hương vị và tình cảm gia đình</p>
                     </div>
                   </div>
                   <div className="about-gallery-item">
-                    <img src="/src/assets/compressed_meal.jpg" alt="Món ăn tươi ngon" />
+                    <img src={meal} alt="Món ăn tươi ngon" />
                     <div className="gallery-caption">
                       <h4>Món ăn thơm ngon</h4>
                       <p>Từng món được chế biến với tâm huyết và nguyên liệu tươi ngon</p>

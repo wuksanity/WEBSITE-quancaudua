@@ -142,7 +142,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("/src/assets/compressed_rest4.jpg");
+  background-image: url("../assets/compressed_rest4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -198,7 +198,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
-  background-image: url("/src/assets/compressed_rest5.jpg");
+  background-image: url("../assets/compressed_rest5.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -383,7 +383,7 @@ body {
   transform: translateX(-50%);
   width: 100vw;
   height: 100%;
-  background-image: url("/src/assets/compressed_rest3.jpg");
+  background-image: url("../assets/compressed_rest3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -523,7 +523,7 @@ body {
   }
   
   .about-hero {
-    background-image: url("/src/assets/compressed_owners4.jpg");
+    background-image: url("../assets/compressed_owners4.jpg");
     background-position: 58% center;
     background-size: cover;
     background-repeat: no-repeat;
