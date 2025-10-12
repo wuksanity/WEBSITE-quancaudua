@@ -1,6 +1,5 @@
 ﻿import React, { useState } from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import MenuSection from '../components/MenuSection';
 import './MainView.css';
 
@@ -163,8 +162,6 @@ const MainView = () => {
       <main className="main-content">
         {renderSection()}
       </main>
-      
-      <Footer />
     </div>
   );
 };

@@ -78,21 +78,23 @@ const MenuSection = () => {
 
       {/* Showcases */}
       <div className="showcases">
-        {showcases.map(({ id, name, image, reverse }) => (
-          <div
-            key={id}
-            className={`showcase ${reverse ? 'reverse' : ''}`}
-          >
-            <img 
-              src={image} 
-              alt={name} 
-              className="showcase-image" 
-              onClick={() => handleImageClick(image, name)}
-              style={{ cursor: 'pointer' }}
-            />
-            <h3 className="showcase-name">{name}</h3>
-          </div>
-        ))}
+        <div>
+          {showcases.map(({ id, name, image, reverse }) => (
+            <div
+              key={id}
+              className={`showcase ${reverse ? 'reverse' : ''}`}
+            >
+              <img 
+                src={image} 
+                alt={name} 
+                className="showcase-image" 
+                onClick={() => handleImageClick(image, name)}
+                style={{ cursor: 'pointer' }}
+              />
+              <h3 className="showcase-name">{name}</h3>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Toppings */}
