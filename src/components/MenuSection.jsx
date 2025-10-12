@@ -128,6 +128,10 @@ const MenuSection = () => {
           </div>
         </div>
       )}
+      
+      <div className="section-credit">
+        Designed & created by <a href="#" data-email="walkerriley315@gmail.com">Walker Riley</a>
+      </div>
     </section>
   );
 };

@@ -57,6 +57,9 @@ const MainView = () => {
                 </div>
               </div>
             </div>
+            <div className="section-credit">
+              Designed & created by <a href="#" data-email="walkerriley315@gmail.com">Walker Riley</a>
+            </div>
           </div>
         );
       case 'menu':
@@ -72,7 +75,7 @@ const MainView = () => {
               </div>
             </div>
             <div className="about-content">
-              <p>Quán Cường đã đồng hành cùng khu phố hơn hai thập kỷ. Chúng tôi nấu ăn với tâm huyết, mong muốn mỗi bữa ăn đều mang lại sự hài lòng cho thực khách.</p>
+              <p>Quán Cường đã đồng hành cùng khu phố từ lâu. Chúng tôi nấu ăn với tâm huyết, mong muốn mỗi bữa ăn đều mang lại sự hài lòng cho thực khách.</p>
               
               {/* Photo Gallery Section */}
               <div className="about-gallery">
@@ -108,6 +111,9 @@ const MainView = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="section-credit">
+              Designed & created by <a href="#" data-email="walkerriley315@gmail.com">Walker Riley</a>
             </div>
           </div>
         );
